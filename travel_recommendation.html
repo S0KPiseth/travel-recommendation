@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+
+    <title>Travel Recommendation</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navBar">
+        <div id="favicon">
+          <img src="./image/favicon.svg" alt="" width="50px" />
+        </div>
+
+        <div id="navLinks">
+          <a href="#home" class="active">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#contact">Contact Us</a>
+        </div>
+        <div id="search">
+          <div>
+            <svg fill="grey" width="25px" height="25px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <title>search</title>
+              <path d="m13 14 -3.031 -3.031q-1.313 1 -2.969 1 -1.344 0 -2.5 -0.656 -1.156 -0.688 -1.813 -1.844 -0.688 -1.156 -0.688 -2.5t0.688 -2.5q0.656 -1.156 1.813 -1.813 1.156 -0.688 2.5 -0.688t2.5 0.688q1.156 0.656 1.844 1.813 0.656 1.156 0.656 2.5 0 1.688 -1.031 3l3.031 3.031zM6.969 10.5q1.469 0 2.5 -1.031 1 -1.031 1 -2.469 0 -1.469 -1 -2.469 -1.031 -1.031 -2.5 -1.031 -1.438 0 -2.469 1.031 -1.031 1 -1.031 2.469 0 1.438 1.031 2.469t2.469 1.031" />
+            </svg>
+            <input type="text" name="" id="" placeholder="Enter any keyword" />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="videoWrapper">
+      <video playsinline autoplay muted loop id="video">
+        <!-- <source src="/video/landing_video.mp4" type="video/mp4" /> -->
+        <source src="/video/24482a59-8ba9-4667-9e1c-3e49ea4b28e7_raw_video.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div id="location">
+      <svg width="20px" height="20px" viewBox="0 0 25.6 25.6" class="icon" xmlns="http://www.w3.org/2000/svg">
+        <path fill="currentcolor" d="M20 10.4a7.2 7.2 0 1 0 -14.4 0c0 2.954 2.363 6.803 7.2 11.414C17.637 17.203 20 13.354 20 10.4M12.8 24C6.933 18.667 4 14.133 4 10.4a8.8 8.8 0 0 1 17.6 0c0 3.733 -2.933 8.267 -8.8 13.6" />
+        <path fill="currentcolor" d="M12.8 12.8a2.4 2.4 0 1 0 0 -4.8 2.4 2.4 0 0 0 0 4.8m0 1.6a4 4 0 1 1 0 -8 4 4 0 0 1 0 8" />
+      </svg>
+      <p>Preah Vihear, Cambodia</p>
+    </div>
+
+    <section class="pages" id="home">
+      <div id="hero">
+        <h1>Travel with us</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos quidem et sint at assumenda consequatur illum vero iste porro doloremque soluta, quam ipsam nam officia ut ab deleniti fugiat error?</p>
+        <br />
+        <button id="call2Action">Book now</button>
+      </div>
+    </section>
+    <section class="pages" id="about">
+      <div id="aboutDiv">
+        <h1>About us</h1>
+        <p>At our core, we are dedicated to helping travelers discover unforgettable experiences tailored to their unique interests. Our platform connects you with personalized recommendations, ensuring every journey is extraordinary.</p>
+      </div>
+      <div id="team">
+        <div class="teamHeading">
+          <p>Meet</p>
+          <h1>Our Team</h1>
+          <p>Passionate travelers dedicated to your adventure.</p>
+        </div>
+        <br />
+        <div id="teamWrapper">
+          <div class="individual">
+            <div class="imageContainer">&nbsp;</div>
+            <p class="name">Alice Johnson</p>
+            <p>Lead Explorer</p>
+            <br />
+            <p>Alice has traveled to over 50 countries and loves sharing her experiences.</p>
+            <div class="contactInfo">
+              <svg width="24px" height="24px" viewBox="0 0 0.48 0.48" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.09 0.03a0.06 0.06 0 0 0 -0.06 0.06v0.3a0.06 0.06 0 0 0 0.06 0.06h0.3a0.06 0.06 0 0 0 0.06 -0.06V0.09a0.06 0.06 0 0 0 -0.06 -0.06zm0.033 0.129a0.036 0.036 0 1 0 0 -0.072 0.036 0.036 0 0 0 0 0.072m0.03 0.225V0.187h-0.06v0.197zM0.193 0.187h0.06v0.026c0.009 -0.014 0.028 -0.033 0.064 -0.033 0.043 0 0.067 0.029 0.067 0.083 0 0.003 0 0.015 0 0.015v0.106h-0.06v-0.106c0 -0.015 -0.003 -0.043 -0.035 -0.043 -0.032 0 -0.035 0.036 -0.036 0.059v0.09h-0.06z" fill="currentcolor" />
+              </svg>
+
+              <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="X--Streamline-Simple-Icons" height="24" width="24">
+                <desc>X Streamline Icon: https://streamlinehq.com</desc>
+                <title>X</title>
+                <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8 -7.584 -6.638 7.584H0.474l8.6 -9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" fill="currentcolor" stroke-width="1"></path>
+              </svg>
+              <svg fill="currentcolor" width="24px" height="24px" viewBox="0 0 0.96 0.96" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <title>dribble</title>
+                <path d="M0.777 0.238a0.516 0.516 0 0 1 -0.211 0.15l-0.004 0.001c0.009 0.018 0.018 0.037 0.025 0.056 0.003 0.007 0.006 0.013 0.008 0.02 0.028 -0.003 0.06 -0.005 0.093 -0.005 0.062 0 0.122 0.006 0.181 0.018l-0.006 -0.001a0.379 0.379 0 0 0 -0.087 -0.24l0.001 0.001zM0.39 0.107a2.01 2.01 0 0 1 0.138 0.215l0.005 0.01c0.081 -0.027 0.15 -0.075 0.201 -0.138l0.001 -0.001a0.382 0.382 0 0 0 -0.255 -0.097 0.384 0.384 0 0 0 -0.093 0.011l0.003 -0.001zM0.104 0.402a1.431 1.431 0 0 0 0.365 -0.049l-0.01 0.002a2.43 2.43 0 0 0 -0.147 -0.229l0.005 0.007c-0.108 0.052 -0.187 0.149 -0.212 0.266l0 0.003zm0.091 0.336c0.073 -0.116 0.18 -0.205 0.308 -0.252l0.004 -0.001q0.008 -0.002 0.015 -0.004a1.38 1.38 0 0 0 -0.031 -0.065c-0.117 0.035 -0.251 0.055 -0.389 0.055h-0.006l0 0.012v0c0 0.099 0.037 0.189 0.099 0.257l0 0zm0.436 0.097c-0.02 -0.111 -0.049 -0.209 -0.086 -0.302l0.004 0.011 -0.002 0.001c-0.129 0.04 -0.235 0.126 -0.3 0.237l-0.001 0.002a0.381 0.381 0 0 0 0.236 0.081c0.054 0 0.106 -0.011 0.152 -0.031l-0.002 0.001zm0.229 -0.293c-0.047 -0.014 -0.101 -0.022 -0.157 -0.022q-0.043 0 -0.085 0.006l0.003 0c0.029 0.077 0.055 0.169 0.073 0.264l0.002 0.01c0.086 -0.059 0.147 -0.15 0.164 -0.255l0 -0.002zM0.48 0.93C0.232 0.93 0.03 0.728 0.03 0.48S0.232 0.03 0.48 0.03 0.93 0.232 0.93 0.48c0 0.248 -0.202 0.45 -0.45 0.45z" />
+              </svg>
+            </div>
+          </div>
+          <div class="individual">
+            <div class="imageContainer">&nbsp;</div>
+            <p class="name">Alice Johnson</p>
+            <p>Lead Explorer</p>
+            <br />
+            <p>Alice has traveled to over 50 countries and loves sharing her experiences.</p>
+            <div class="contactInfo">
+              <svg width="24px" height="24px" viewBox="0 0 0.48 0.48" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.09 0.03a0.06 0.06 0 0 0 -0.06 0.06v0.3a0.06 0.06 0 0 0 0.06 0.06h0.3a0.06 0.06 0 0 0 0.06 -0.06V0.09a0.06 0.06 0 0 0 -0.06 -0.06zm0.033 0.129a0.036 0.036 0 1 0 0 -0.072 0.036 0.036 0 0 0 0 0.072m0.03 0.225V0.187h-0.06v0.197zM0.193 0.187h0.06v0.026c0.009 -0.014 0.028 -0.033 0.064 -0.033 0.043 0 0.067 0.029 0.067 0.083 0 0.003 0 0.015 0 0.015v0.106h-0.06v-0.106c0 -0.015 -0.003 -0.043 -0.035 -0.043 -0.032 0 -0.035 0.036 -0.036 0.059v0.09h-0.06z" fill="currentcolor" />
+              </svg>
+
+              <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="X--Streamline-Simple-Icons" height="24" width="24">
+                <desc>X Streamline Icon: https://streamlinehq.com</desc>
+                <title>X</title>
+                <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8 -7.584 -6.638 7.584H0.474l8.6 -9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" fill="currentcolor" stroke-width="1"></path>
+              </svg>
+              <svg fill="currentcolor" width="24px" height="24px" viewBox="0 0 0.96 0.96" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <title>dribble</title>
+                <path d="M0.777 0.238a0.516 0.516 0 0 1 -0.211 0.15l-0.004 0.001c0.009 0.018 0.018 0.037 0.025 0.056 0.003 0.007 0.006 0.013 0.008 0.02 0.028 -0.003 0.06 -0.005 0.093 -0.005 0.062 0 0.122 0.006 0.181 0.018l-0.006 -0.001a0.379 0.379 0 0 0 -0.087 -0.24l0.001 0.001zM0.39 0.107a2.01 2.01 0 0 1 0.138 0.215l0.005 0.01c0.081 -0.027 0.15 -0.075 0.201 -0.138l0.001 -0.001a0.382 0.382 0 0 0 -0.255 -0.097 0.384 0.384 0 0 0 -0.093 0.011l0.003 -0.001zM0.104 0.402a1.431 1.431 0 0 0 0.365 -0.049l-0.01 0.002a2.43 2.43 0 0 0 -0.147 -0.229l0.005 0.007c-0.108 0.052 -0.187 0.149 -0.212 0.266l0 0.003zm0.091 0.336c0.073 -0.116 0.18 -0.205 0.308 -0.252l0.004 -0.001q0.008 -0.002 0.015 -0.004a1.38 1.38 0 0 0 -0.031 -0.065c-0.117 0.035 -0.251 0.055 -0.389 0.055h-0.006l0 0.012v0c0 0.099 0.037 0.189 0.099 0.257l0 0zm0.436 0.097c-0.02 -0.111 -0.049 -0.209 -0.086 -0.302l0.004 0.011 -0.002 0.001c-0.129 0.04 -0.235 0.126 -0.3 0.237l-0.001 0.002a0.381 0.381 0 0 0 0.236 0.081c0.054 0 0.106 -0.011 0.152 -0.031l-0.002 0.001zm0.229 -0.293c-0.047 -0.014 -0.101 -0.022 -0.157 -0.022q-0.043 0 -0.085 0.006l0.003 0c0.029 0.077 0.055 0.169 0.073 0.264l0.002 0.01c0.086 -0.059 0.147 -0.15 0.164 -0.255l0 -0.002zM0.48 0.93C0.232 0.93 0.03 0.728 0.03 0.48S0.232 0.03 0.48 0.03 0.93 0.232 0.93 0.48c0 0.248 -0.202 0.45 -0.45 0.45z" />
+              </svg>
+            </div>
+          </div>
+          <div class="individual">
+            <div class="imageContainer">&nbsp;</div>
+            <p class="name">Alice Johnson</p>
+            <p>Lead Explorer</p>
+            <br />
+            <p>Alice has traveled to over 50 countries and loves sharing her experiences.</p>
+            <div class="contactInfo">
+              <svg width="24px" height="24px" viewBox="0 0 0.48 0.48" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.09 0.03a0.06 0.06 0 0 0 -0.06 0.06v0.3a0.06 0.06 0 0 0 0.06 0.06h0.3a0.06 0.06 0 0 0 0.06 -0.06V0.09a0.06 0.06 0 0 0 -0.06 -0.06zm0.033 0.129a0.036 0.036 0 1 0 0 -0.072 0.036 0.036 0 0 0 0 0.072m0.03 0.225V0.187h-0.06v0.197zM0.193 0.187h0.06v0.026c0.009 -0.014 0.028 -0.033 0.064 -0.033 0.043 0 0.067 0.029 0.067 0.083 0 0.003 0 0.015 0 0.015v0.106h-0.06v-0.106c0 -0.015 -0.003 -0.043 -0.035 -0.043 -0.032 0 -0.035 0.036 -0.036 0.059v0.09h-0.06z" fill="currentcolor" />
+              </svg>
+
+              <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="X--Streamline-Simple-Icons" height="24" width="24">
+                <desc>X Streamline Icon: https://streamlinehq.com</desc>
+                <title>X</title>
+                <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8 -7.584 -6.638 7.584H0.474l8.6 -9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" fill="currentcolor" stroke-width="1"></path>
+              </svg>
+              <svg fill="currentcolor" width="24px" height="24px" viewBox="0 0 0.96 0.96" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <title>dribble</title>
+                <path d="M0.777 0.238a0.516 0.516 0 0 1 -0.211 0.15l-0.004 0.001c0.009 0.018 0.018 0.037 0.025 0.056 0.003 0.007 0.006 0.013 0.008 0.02 0.028 -0.003 0.06 -0.005 0.093 -0.005 0.062 0 0.122 0.006 0.181 0.018l-0.006 -0.001a0.379 0.379 0 0 0 -0.087 -0.24l0.001 0.001zM0.39 0.107a2.01 2.01 0 0 1 0.138 0.215l0.005 0.01c0.081 -0.027 0.15 -0.075 0.201 -0.138l0.001 -0.001a0.382 0.382 0 0 0 -0.255 -0.097 0.384 0.384 0 0 0 -0.093 0.011l0.003 -0.001zM0.104 0.402a1.431 1.431 0 0 0 0.365 -0.049l-0.01 0.002a2.43 2.43 0 0 0 -0.147 -0.229l0.005 0.007c-0.108 0.052 -0.187 0.149 -0.212 0.266l0 0.003zm0.091 0.336c0.073 -0.116 0.18 -0.205 0.308 -0.252l0.004 -0.001q0.008 -0.002 0.015 -0.004a1.38 1.38 0 0 0 -0.031 -0.065c-0.117 0.035 -0.251 0.055 -0.389 0.055h-0.006l0 0.012v0c0 0.099 0.037 0.189 0.099 0.257l0 0zm0.436 0.097c-0.02 -0.111 -0.049 -0.209 -0.086 -0.302l0.004 0.011 -0.002 0.001c-0.129 0.04 -0.235 0.126 -0.3 0.237l-0.001 0.002a0.381 0.381 0 0 0 0.236 0.081c0.054 0 0.106 -0.011 0.152 -0.031l-0.002 0.001zm0.229 -0.293c-0.047 -0.014 -0.101 -0.022 -0.157 -0.022q-0.043 0 -0.085 0.006l0.003 0c0.029 0.077 0.055 0.169 0.073 0.264l0.002 0.01c0.086 -0.059 0.147 -0.15 0.164 -0.255l0 -0.002zM0.48 0.93C0.232 0.93 0.03 0.728 0.03 0.48S0.232 0.03 0.48 0.03 0.93 0.232 0.93 0.48c0 0.248 -0.202 0.45 -0.45 0.45z" />
+              </svg>
+            </div>
+          </div>
+          <div class="individual">
+            <div class="imageContainer">&nbsp;</div>
+            <p class="name">Alice Johnson</p>
+            <p>Lead Explorer</p>
+            <br />
+            <p>Alice has traveled to over 50 countries and loves sharing her experiences.</p>
+            <div class="contactInfo">
+              <svg width="24px" height="24px" viewBox="0 0 0.48 0.48" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.09 0.03a0.06 0.06 0 0 0 -0.06 0.06v0.3a0.06 0.06 0 0 0 0.06 0.06h0.3a0.06 0.06 0 0 0 0.06 -0.06V0.09a0.06 0.06 0 0 0 -0.06 -0.06zm0.033 0.129a0.036 0.036 0 1 0 0 -0.072 0.036 0.036 0 0 0 0 0.072m0.03 0.225V0.187h-0.06v0.197zM0.193 0.187h0.06v0.026c0.009 -0.014 0.028 -0.033 0.064 -0.033 0.043 0 0.067 0.029 0.067 0.083 0 0.003 0 0.015 0 0.015v0.106h-0.06v-0.106c0 -0.015 -0.003 -0.043 -0.035 -0.043 -0.032 0 -0.035 0.036 -0.036 0.059v0.09h-0.06z" fill="currentcolor" />
+              </svg>
+
+              <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="X--Streamline-Simple-Icons" height="24" width="24">
+                <desc>X Streamline Icon: https://streamlinehq.com</desc>
+                <title>X</title>
+                <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8 -7.584 -6.638 7.584H0.474l8.6 -9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" fill="currentcolor" stroke-width="1"></path>
+              </svg>
+              <svg fill="currentcolor" width="24px" height="24px" viewBox="0 0 0.96 0.96" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <title>dribble</title>
+                <path d="M0.777 0.238a0.516 0.516 0 0 1 -0.211 0.15l-0.004 0.001c0.009 0.018 0.018 0.037 0.025 0.056 0.003 0.007 0.006 0.013 0.008 0.02 0.028 -0.003 0.06 -0.005 0.093 -0.005 0.062 0 0.122 0.006 0.181 0.018l-0.006 -0.001a0.379 0.379 0 0 0 -0.087 -0.24l0.001 0.001zM0.39 0.107a2.01 2.01 0 0 1 0.138 0.215l0.005 0.01c0.081 -0.027 0.15 -0.075 0.201 -0.138l0.001 -0.001a0.382 0.382 0 0 0 -0.255 -0.097 0.384 0.384 0 0 0 -0.093 0.011l0.003 -0.001zM0.104 0.402a1.431 1.431 0 0 0 0.365 -0.049l-0.01 0.002a2.43 2.43 0 0 0 -0.147 -0.229l0.005 0.007c-0.108 0.052 -0.187 0.149 -0.212 0.266l0 0.003zm0.091 0.336c0.073 -0.116 0.18 -0.205 0.308 -0.252l0.004 -0.001q0.008 -0.002 0.015 -0.004a1.38 1.38 0 0 0 -0.031 -0.065c-0.117 0.035 -0.251 0.055 -0.389 0.055h-0.006l0 0.012v0c0 0.099 0.037 0.189 0.099 0.257l0 0zm0.436 0.097c-0.02 -0.111 -0.049 -0.209 -0.086 -0.302l0.004 0.011 -0.002 0.001c-0.129 0.04 -0.235 0.126 -0.3 0.237l-0.001 0.002a0.381 0.381 0 0 0 0.236 0.081c0.054 0 0.106 -0.011 0.152 -0.031l-0.002 0.001zm0.229 -0.293c-0.047 -0.014 -0.101 -0.022 -0.157 -0.022q-0.043 0 -0.085 0.006l0.003 0c0.029 0.077 0.055 0.169 0.073 0.264l0.002 0.01c0.086 -0.059 0.147 -0.15 0.164 -0.255l0 -0.002zM0.48 0.93C0.232 0.93 0.03 0.728 0.03 0.48S0.232 0.03 0.48 0.03 0.93 0.232 0.93 0.48c0 0.248 -0.202 0.45 -0.45 0.45z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="teamHeading">
+        <p>connect</p>
+
+        <h1>GET IN TOUCH</h1>
+
+        <p>We'd love to hear from you!</p>
+      </div>
+
+      <div id="contactWrapper">
+        <div id="formDiv">
+          <form action="">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" />
+            <label for="name">Email</label>
+            <input type="email" name="name" id="Email" />
+            <label for="message">Message</label>
+            <textarea name="" id="message"></textarea>
+            <span>
+              <input type="checkbox" name="" id="check" />
+              <label for="check">I agree to the Terms</label>
+            </span>
+
+            <input type="submit" value="Send" id="send" />
+          </form>
+        </div>
+        <div id="socialDiv"></div>
+      </div>
+    </section>
+
+    <script src="./scripts/travel_recommendation.js"></script>
+  </body>
+</html>

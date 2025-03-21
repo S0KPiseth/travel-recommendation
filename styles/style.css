@@ -1,0 +1,125 @@
+.pages {
+  height: 100vh;
+}
+* {
+  margin: 0;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+#home {
+  position: relative;
+  overflow: hidden;
+  place-content: center;
+  place-items: center;
+}
+#videoWrapper {
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  height: 100vh;
+  border: 0;
+}
+
+#search {
+  place-items: center;
+}
+#search div {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#search div > svg {
+  position: absolute;
+  left: 5px;
+}
+
+#search input {
+  font-size: 20px;
+  border: 1px solid grey;
+  border-radius: 100px;
+  padding: 5px;
+  padding-left: 30px;
+}
+#search input:focus {
+  outline: none;
+}
+#navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#navBar div {
+  width: 33%;
+}
+#navLinks a {
+  margin-right: 10px;
+  margin-left: 10px;
+  color: gray;
+  text-decoration: none;
+}
+#navLinks {
+  text-align: center;
+}
+#hero {
+  text-align: center;
+  color: white;
+  place-items: center;
+}
+#hero p {
+  width: 50%;
+  font-size: larger;
+  -webkit-text-stroke: 0.2px grey;
+}
+#hero h1 {
+  font-size: 27vh;
+}
+#location {
+  display: flex;
+  color: white;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  opacity: 80%;
+}
+#call2Action {
+  padding: 10px 20px 10px 20px;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: medium;
+  border: 0;
+  text-transform: uppercase;
+}
+.active {
+  position: relative;
+  color: black !important;
+}
+.active::after {
+  position: absolute;
+  content: " ";
+  width: 5px;
+  height: 5px;
+  border-radius: 100px;
+  bottom: -5px;
+  left: 50%;
+  background-color: rgba(0, 0, 0, 0.656);
+}
+.teamHeading p {
+  font-size: small;
+}
+.teamHeading h1 {
+  font-size: 40px;
+}

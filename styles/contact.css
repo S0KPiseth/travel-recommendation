@@ -1,0 +1,38 @@
+#contact {
+  height: 100vh;
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#formDiv form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+#formDiv input {
+  height: 25px;
+  border-radius: 5px;
+
+  background-color: transparent;
+  border: 1px solid white;
+}
+#contactWrapper div {
+  width: 45%;
+}
+#contactWrapper span {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+#message {
+  height: 200px;
+  background-color: transparent;
+  color: white;
+}
+#send {
+  width: 90px;
+  height: 70px;
+  background-color: white !important;
+}
