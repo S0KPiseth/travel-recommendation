@@ -44,37 +44,60 @@ function applyMargin(){
 }
 window.onload=applyMargin;
 window.addEventListener("scroll", applyMargin);
+//search function
+const search = (e) => {
+    if (e.key !== "Enter") return;
 
-//search func
-const search = (e)=>{
-    let searchResult =[];
-    
-    
-    if(e.key=="Enter"){
-        fetch("./travel_recommendationAPI.json").then(res=>res.json()).then(data=>{
-            for(const key of data){
-                if(key.category.includes(searchBar.value.toLowerCase())){
-                    searchResult.push(key)
-                }
-            }
-            let htmlSnippet = '';
-            searchResult.forEach((e)=>{ htmlSnippet+= `<div class="resultContainer rsRR"><img src=${e.image} alt="" width="100%" class="rsRR"><div class="details rsRR"><h2 class="rsRR">${e.name}</h2><p class="rsRR" id="des">${e.description}</p><br/><a class="call2Action rsRR" href='${e.link}' target='_blank'>More info</a></div></div>`})
-            setTimeout(()=>{
+    const query = searchBar.value.toLowerCase().trim();
+    if (!query) return;
+
+    loadingSect.style.zIndex = "1";
+    landingSect.classList.add("loadingAnimation");
+
+    fetch("./travel_recommendationAPI.json")
+        .then(res => res.json())
+        .then(data => {
+            const searchResult = data.filter(item =>
+                item.category.some(cat =>
+                    cat.toLowerCase().includes(query)
+                )
+            );
+            setTimeout(() => {
                 loadingSect.style.zIndex = "-1";
-                resultDisplay.innerHTML=htmlSnippet;
-                document.body.style.height="fit-content";
-                document.body.style.overflow="visible"
-                landingSect.classList.remove("loadingAnimation")
-                
+                if (searchResult.length === 0) {
+                    showNotFoundAlert();
+                }
+                resultDisplay.innerHTML = searchResult.map(item => `
+                    <div class="resultContainer rsRR">
+                        <img src="${item.image}" alt="" width="100%" class="rsRR">
+                        <div class="details rsRR">
+                            <h2 class="rsRR">${item.name}</h2>
+                            <p class="rsRR" id="des">${item.description}</p>
+                            <br/>
+                            <a class="call2Action rsRR" href="${item.link}" target="_blank">More info</a>
+                        </div>
+                    </div>
+                `).join("");
+                document.body.style.height = "fit-content";
+                document.body.style.overflow = "visible";
+                landingSect.classList.remove("loadingAnimation");
+            }, 1500);
+        })
+        .catch(err => console.error("Error fetching data:", err));
 
-            }, 2000)
-        }).catch(err=> console.log(err));
-        searchSideEffect();
-        document.body.addEventListener("click", close)
-             
-    }
+    searchSideEffect();
+    document.body.addEventListener("click", close);
+};
 
+function showNotFoundAlert() {
+    const alertBox = document.getElementById("not-found-alert");
+    alertBox.classList.add("showAlert");
+    setTimeout(() => {
+        alertBox.classList.remove("showAlert");
+    }, 2500);
 }
+
+
 const searchSideEffect = ()=>{
     //set search icon to close icon
     searchIcon.style.d="path('m2 12.125 4.125 -4.125L2 3.875l1 -1 4.125 4.125L11.25 2.875l1 1 -4.125 4.125 4.125 4.125 -1 1 -4.125 -4.125L3 13.125z')";

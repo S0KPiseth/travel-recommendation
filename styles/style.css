@@ -215,3 +215,32 @@ svg path {
     scale: 1;
   }
 }
+#not-found-alert {
+  position: fixed;
+  display: flex;
+  color: white;
+  background-color: rgb(255, 0, 0);
+  align-items: center;
+  column-gap: 10px;
+  bottom: 0;
+  padding: 5px;
+  border-radius: 5px;
+  transform: translateX(-100%);
+}
+.showAlert {
+  animation: alert 2.5s ease-in-out;
+}
+@keyframes alert {
+  0% {
+    transform: translateX(-100%);
+  }
+  20% {
+    transform: translate(0%);
+  }
+  80% {
+    transform: translate(0%);
+  }
+  100% {
+    transform: translate(-100%);
+  }
+}
