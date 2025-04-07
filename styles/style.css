@@ -7,14 +7,20 @@
 ::-webkit-scrollbar {
   width: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
 header {
   position: fixed;
-  z-index: 100;
+  z-index: 90;
   width: 100%;
+}
+svg path {
+  transition: d 0.5;
 }
 #home {
   position: relative;
@@ -30,6 +36,28 @@ header {
   overflow: hidden;
   height: 100vh;
   border: 0;
+}
+.loading {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+  background-color: rgba(85, 60, 154, 0.1);
+}
+.loadingAnimation {
+  animation: color 1s;
+}
+@keyframes color {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: rgba(85, 60, 154, 0.1);
+  }
 }
 
 #search {
@@ -95,13 +123,16 @@ header {
   right: 10px;
   opacity: 80%;
 }
-#call2Action {
+.call2Action {
   padding: 10px 20px 10px 20px;
   border-radius: 100px;
-  font-weight: 500;
+  font-weight: 400;
   font-size: medium;
   border: 0;
   text-transform: uppercase;
+  text-decoration: none;
+  background-color: white;
+  color: black;
 }
 .active {
   position: relative;
@@ -122,4 +153,65 @@ header {
 }
 .teamHeading h1 {
   font-size: 40px;
+}
+#resultDisplay {
+  width: 30%;
+  height: 90vh;
+  overflow: scroll;
+  position: fixed;
+  right: 2%;
+  top: 10%;
+  z-index: 10;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.resultDisplayAni {
+  animation: expand 0.5s reverse;
+  overflow: hidden;
+}
+#resultDisplay:focus {
+  outline: none;
+}
+/* result animation */
+@keyframes expand {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 90vh;
+  }
+}
+
+.resultContainer {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  animation: pulse 0.5s;
+}
+.resultContainer img {
+  border-radius: 16px 16px 0 0;
+}
+.details {
+  padding: 20px;
+}
+.resultContainer .call2Action {
+  padding: 10px 15px 10px 15px;
+  font-size: 12px !important;
+}
+#des {
+  color: rgba(255, 255, 255, 0.305);
+}
+@keyframes pulse {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
 }

@@ -14,9 +14,14 @@
 #formDiv input {
   height: 25px;
   border-radius: 5px;
+  color: white;
 
   background-color: transparent;
   border: 1px solid white;
+}
+#contactWrapper {
+  display: flex;
+  column-gap: 100px;
 }
 #contactWrapper div {
   width: 45%;
@@ -35,4 +40,45 @@
   width: 90px;
   height: 70px;
   background-color: white !important;
+  color: black !important;
+}
+textarea {
+  border: 1.5px solid white;
+  border-radius: 10px;
+}
+.socialLogo {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content !important;
+  padding: 10px;
+  border-radius: 100px;
+}
+#socialDiv {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  justify-items: start;
+  align-items: center;
+}
+#socialDiv a {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  color: white;
+  text-decoration: none;
+}
+#socialDiv > a:nth-child(1) {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+#socialDiv > a:nth-child(2) {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+#socialDiv > a:nth-child(3) {
+  grid-column: 1/2;
+  grid-row: 2/3;
 }
